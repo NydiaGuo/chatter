@@ -1,2 +1,2 @@
 # chatter
-this is chat app
+this is a communication app in realtime

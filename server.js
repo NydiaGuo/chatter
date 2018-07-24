@@ -3,9 +3,19 @@ var app = express();
 
 app.use(express.static(__dirname));
 
+var messages = [
+  {
+    name: 'Nydia',
+    message: 'How are you doing?'
+  },
+  {
+    name: 'Joel',
+    message: 'I am good, how about you?'
+  }
+]
 
 app.get('/messages', (req, res) => {
-	res.send('hello! this is res!');
+	res.send(messages);
 });
 
 
